@@ -1,19 +1,2 @@
-# Building
-
-* [Gradle](https://gradle.org/) - Dependency Management
-
-The GradleWrapper in included in this project.
-
-**Windows:**
-
-```
-gradlew.bat clean build
-```
-
-**macOS/Linux:**
-
-```
-./gradlew clean build
-```
-
-Build artifacts should be found in `./build/libs` folder.
+# KFCVMe50
+每周四，伟大的KFC之神会在后台降下神谕。
