@@ -63,6 +63,21 @@ object Command {
         }
     }
 
+    @CommandBody
+    val help = subCommand {
+        execute<CommandSender> { sender, _, _ ->
+            help(sender)
+        }
+        dynamic(commit = "page") {
+            suggestion<CommandSender>(uncheck = true) { _, _ ->
+                (1..commandsPages).toList().map { it.toString() }
+            }
+            execute<CommandSender> { sender, _, argument ->
+                help(sender, argument.toIntOrNull()?:1)
+            }
+        }
+    }
+
     private fun reloadCommand(sender: CommandSender) {
         submit(async = true) {
             ConfigManager.reload()

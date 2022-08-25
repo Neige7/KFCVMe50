@@ -23,3 +23,6 @@ help:
     reload:
       command: "§c/kfc reload"
       description: "重载插件配置"
+    help:
+      command: "§c/kfc help"
+      description: "查看帮助信息"
