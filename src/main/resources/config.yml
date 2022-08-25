@@ -1,0 +1,25 @@
+# 提示的间隔(tick)
+period: 20
+# 某些提示西悉尼
+messages:
+  # 重载后的提示信息
+  reloadedMessage: "§c[KFCVMe50] 重载完毕"
+  # 周四伟大的KFC之神该提示的信息
+  default: "java.lang.KFCException: KFC Fucking Crazy Thursday!!"
+# 指令帮助信息
+help:
+  prefix: |-
+    §c=====================§eKFCVMe50§c=====================
+    §c==================[]为必填, ()为选填==================
+  suffix: §c================<< {prev} {current}/{total} {next} §c>>================
+  amount: 10
+  format: "{command} > {description}"
+  prev: 上一页
+  next: 下一页
+  commands:
+    error:
+      command: "§c/kfc error [报错内容] (重复次数)"
+      description: "向后台发送报错"
+    reload:
+      command: "§c/kfc reload"
+      description: "重载插件配置"
